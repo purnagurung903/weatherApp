@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather app</title>
+  <!-- Bootstrap CSS CDN  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+<!--adding css link-->
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--weather heading using jumbotron-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-5 text-center">Weather Dashboaed</h1>
+
+    </div>
+
+  </div>
+  <!--Main content container-->
+  <div class="container-fluid">
+    <!--Main content row-->
+    <div class="row">
+      <!--city search bar-->
+      <div class="col-3 searchCol">
+        <h4>Search for a City:</h4>
+        <!--search form with button -->
+        <div class ="input-group mb-3">
+          <input type="text" class="form-control" id="cityInput" placeholder="City Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button type="button" class="btn btn-outline-primary" id="citySearchBtn">
+             search</button>
+            </div>
+            
+
+        </div>
+        <!--city table list-->
+
+        <div class="list-group" id="cityList"></div>
+
+      </div>
+      <!--weather information column-->
+      <div class="col-9">
+        <div class="card" style="width: 100%;" id="weatherContainer"></div>
+          <div id="forecastContainer"></div>
+
+      </div>
+
+
+    </div>
+    
+  </div>
+  
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
